@@ -63,6 +63,7 @@ int nodeNumber = 0;
 while (strCurrent.compare("w") != 0) {
     // Traverse the list
     pCursor = pCursor->pNext;
+    strCurrent = pCursor->dataField;
     nodeNumber++;
 }
 // "w" was found at what node number.
