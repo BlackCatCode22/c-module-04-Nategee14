@@ -54,4 +54,18 @@ for (int i = 0; i <= 10; i++){
 cout << "Heres my linked list:";
 printList (pHead);
 
+// Traverse the list until a "w" is found.
+// Create a pointer named pCursor.
+Node* pCursor = pHead; 
+// Create a while loop with a loop control variable.
+string strCurrent = pCursor->dataField;
+int nodeNumber = 0;
+while (strCurrent.compare("w") != 0) {
+    // Traverse the list
+    pCursor = pCursor->pNext;
+    nodeNumber++;
+}
+// "w" was found at what node number.
+cout << "\nThe letter 'w' was found at node number: " << nodeNumber << endl;
+    
 }
